@@ -110,21 +110,6 @@ tiny(1.5);
 /**************** Function 10.  *******************/
 
 var getSeconds = function(MMSS) {
-	//turn into array
-	var array = (MMSS).split('');
-	//turn the first two index values into a string
-	var stringer = (array[0] + array[1]).join();
-	//multiply this string by 60
-	var multiplier = stringer * 60;
-
-	return multiplier; 
-}
-
-getSeconds('01:30');
-
-// ****************************************
-
-var getSeconds = function(MMSS) {
 	//get first character
 	var firstChar = MMSS.charAt(0);
 	//get second character
@@ -145,7 +130,9 @@ var getSeconds = function(MMSS) {
 	return total; 
 }
 
-getSeconds('01:30');
+getSeconds('11:30');
+
+/*********************************************/
 
 
 
